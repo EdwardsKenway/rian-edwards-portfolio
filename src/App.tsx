@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
+import { Routes, Route } from "react-router-dom";
 import {
   Main,
+  AboutMe,
   Timeline,
   Expertise,
   Project,
@@ -9,6 +11,9 @@ import {
   Footer,
 } from "./components";
 import FadeIn from './components/FadeIn';
+import CV from './pages/CV';
+import Reflection from './pages/Reflection';
+import CoverLetter from './pages/CoverLetter';
 import './index.scss';
 
 function App() {
@@ -30,11 +35,21 @@ function App() {
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
-            <Main/>
-            <Expertise/>
-            <Timeline/>
-            <Project/>
-            <Contact/>
+            <Routes>
+                <Route path="/" element={
+                    <>
+                        <Main/>
+                        <AboutMe/>
+                        <Expertise/>
+                        <Timeline/>
+                        <Project/>
+                        <Contact/>
+                    </>
+                }/>
+                <Route path="/cv" element={<CV/>}/>
+                <Route path="/reflection" element={<Reflection/>}/>
+                <Route path="/cover-letter" element={<CoverLetter/>}/>
+            </Routes>
         </FadeIn>
         <Footer />
     </div>

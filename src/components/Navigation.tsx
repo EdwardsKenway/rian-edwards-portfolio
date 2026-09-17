@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -18,6 +19,7 @@ import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
 const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const pageItems = [['Home', '/'], ['CV', '/cv'], ['Reflection', '/reflection'], ['Cover Letter', '/cover-letter']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -69,6 +71,13 @@ function Navigation({parentToChild, modeChange}: any) {
             </ListItemButton>
           </ListItem>
         ))}
+        {pageItems.map((item) => (
+          <ListItem key={item[0]} disablePadding>
+            <ListItemButton component={Link} to={item[1]} sx={{ textAlign: 'center' }}>
+              <ListItemText primary={item[0]} />
+            </ListItemButton>
+          </ListItem>
+        ))}
       </List>
     </Box>
   );
@@ -95,6 +104,11 @@ function Navigation({parentToChild, modeChange}: any) {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+                {item[0]}
+              </Button>
+            ))}
+            {pageItems.map((item) => (
+              <Button key={item[0]} component={Link} to={item[1]} sx={{ color: '#fff' }}>
                 {item[0]}
               </Button>
             ))}
