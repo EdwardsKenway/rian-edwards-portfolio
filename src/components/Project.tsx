@@ -13,7 +13,7 @@ function Project() {
             <div className="project">
                 <a href="https://jun-je0ng.github.io/Robotics-Studio-2" target="_blank" rel="noreferrer"><img src={sortO} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://jun-je0ng.github.io/Robotics-Studio-2" target="_blank" rel="noreferrer"><h2>Sort-O: Autonomous Plastic Sorting Robot</h2></a>
-                <p>Led the Machine Learning subsystem within a 4-person team building a fully autonomous robot that detects, classifies and sorts plastic waste using a UR3e robotic arm, depth camera and ROS2. Fine-tuned a YOLOv8 OBB model achieving mAP@50 of 0.991.</p>
+                <p>Led the Machine Learning subsystem within a 4-person team building a fully autonomous robot that detects, classifies and sorts plastic waste using a UR3e robotic arm, depth camera and ROS2. Fine-tuned a YOLOv8 OBB model achieving mAP@50 of 0.991. View the project: <a href="https://jun-je0ng.github.io/Robotics-Studio-2" target="_blank" rel="noreferrer">jun-je0ng.github.io/Robotics-Studio-2</a></p>
             </div>
             <div className="project">
                 <img src={pedometer} className="zoom" alt="thumbnail" width="100%"/>
