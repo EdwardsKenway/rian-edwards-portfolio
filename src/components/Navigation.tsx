@@ -18,8 +18,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
-const pageItems = [['Home', '/'], ['CV', '/cv'], ['Reflection', '/reflection'], ['Cover Letter', '/cover-letter']];
+const navItems = [['Home', '/'], ['About Me', 'about'], ['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const subNavItems = [['About Me', 'about'], ['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const pageItems = [['CV', '/cv'], ['Cover Letter', '/cover-letter'], ['Reflection', '/reflection']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -66,11 +67,20 @@ function Navigation({parentToChild, modeChange}: any) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
-              <ListItemText primary={item[0]} />
-            </ListItemButton>
+            {item[0] === 'Home' ? (
+              <ListItemButton component={Link} to={item[1]} sx={{ textAlign: 'center' }}>
+                <ListItemText primary={item[0]} />
+              </ListItemButton>
+            ) : (
+              <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+                <ListItemText primary={item[0]} />
+              </ListItemButton>
+            )}
           </ListItem>
         ))}
+      </List>
+      <Divider />
+      <List>
         {pageItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
             <ListItemButton component={Link} to={item[1]} sx={{ textAlign: 'center' }}>
@@ -102,11 +112,20 @@ function Navigation({parentToChild, modeChange}: any) {
             <DarkModeIcon onClick={() => modeChange()}/>
           )}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
-                {item[0]}
-              </Button>
-            ))}
+            <Box className="nav-dropdown">
+              <Button component={Link} to="/" sx={{ color: '#fff' }}>Home</Button>
+              <Box className="nav-dropdown-menu">
+                {subNavItems.map((item) => (
+                  <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+                    {item[0]}
+                  </Button>
+                ))}
+              </Box>
+            </Box>
+            <Divider
+              orientation="vertical"
+              sx={{ display: 'inline-block', height: '24px', verticalAlign: 'middle', mx: 1, borderColor: 'rgba(255,255,255,0.3)' }}
+            />
             {pageItems.map((item) => (
               <Button key={item[0]} component={Link} to={item[1]} sx={{ color: '#fff' }}>
                 {item[0]}

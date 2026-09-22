@@ -1,44 +1,35 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faMicrochip, faBrain, faDraftingCompass } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "C/C++",
+    "ROS 2",
+    "Arduino",
+    "ESP32 / M5Stack",
+    "PCB Design",
+    "Sensor Integration",
+    "Motor Drivers"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Python",
+    "YOLOv8 OBB",
+    "scikit-learn",
+    "MATLAB",
+    "Dataset Preparation",
+    "Model Training & Evaluation"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "SolidWorks",
+    "3D Printing",
+    "Mechanical Assembly",
+    "Altium",
+    "Rapid Prototyping"
 ];
 
 function Expertise() {
@@ -48,9 +39,9 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faMicrochip} size="3x"/>
+                    <h3>Embedded Systems & Robotics</h3>
+                    <p>I design and build embedded control systems end-to-end, from custom PCBs and sensor integration through to firmware, spanning ESP32/M5Stack platforms and ROS2-based robotics.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,9 +51,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faBrain} size="3x"/>
+                    <h3>Machine Learning & Computer Vision</h3>
+                    <p>I fine-tune and evaluate computer vision models for real-world robotics tasks, from dataset preparation through to deployment on physical systems.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,9 +63,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faDraftingCompass} size="3x"/>
+                    <h3>Design, CAD & Prototyping</h3>
+                    <p>I take mechanical designs from concept to physical prototype, using CAD modelling, 3D printing and hands-on assembly to validate ideas quickly.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (

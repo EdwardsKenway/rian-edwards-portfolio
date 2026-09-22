@@ -49,6 +49,32 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 }
 
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+
+  .nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    min-width: 180px;
+    background-color: #0d1116;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 10;
+
+    button {
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+
+  &:hover .nav-dropdown-menu {
+    display: flex;
+  }
+}
+
 .navigation-bar-responsive {
   span, p {
     color: #0d1116;

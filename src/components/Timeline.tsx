@@ -16,50 +16,38 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="June 2026 - Ongoing"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Winter Scholarship — IntelliForce Hydraulic/Pneumatic Safety System</h3>
+            <h4 className="vertical-timeline-element-subtitle">UTS Robotics Institute</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Developing an ESP32-based hydraulic and pneumatic pump safety system for a mining industrial partner, including custom PCB design and embedded C++ firmware with runtime-configurable safety parameters.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="December 2025 - February 2026"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Intern — Plant Development & Engineering</h3>
+            <h4 className="vertical-timeline-element-subtitle">PT Saptaindra Sejati (Subsidiary of Adaro Energy)</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Led a feasibility study for a collaborative robotic welding system and designed an Arduino-based IMU alert system, contributing to a PLC/HMI monitoring system that reduced swing bearing failures in Komatsu excavators.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="January 2025 - March 2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Intern — Software Development & Business Analysis</h3>
+            <h4 className="vertical-timeline-element-subtitle">PricewaterhouseCoopers (PwC)</h4>
             <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
+              Contributed to a web application using Python (Django), JavaScript and CSS, and authored TSD/FSD documentation in an agile development environment.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
