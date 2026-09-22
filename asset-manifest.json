@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rian-edwards-portfolio/static/css/main.2c03f474.css",
-    "main.js": "/rian-edwards-portfolio/static/js/main.4bdb2c09.js",
+    "main.js": "/rian-edwards-portfolio/static/js/main.f8fabeb9.js",
     "static/js/453.2580d2ac.chunk.js": "/rian-edwards-portfolio/static/js/453.2580d2ac.chunk.js",
     "static/media/warman2024.jpeg": "/rian-edwards-portfolio/static/media/warman2024.4a553e864a198c4bf353.jpeg",
     "static/media/sort-o.jpg": "/rian-edwards-portfolio/static/media/sort-o.39d458c77dba1f8ff3fc.jpg",
@@ -12,11 +12,11 @@
     "static/media/profilepic.jpg": "/rian-edwards-portfolio/static/media/profilepic.57d70eb01327ab774e55.jpg",
     "index.html": "/rian-edwards-portfolio/index.html",
     "main.2c03f474.css.map": "/rian-edwards-portfolio/static/css/main.2c03f474.css.map",
-    "main.4bdb2c09.js.map": "/rian-edwards-portfolio/static/js/main.4bdb2c09.js.map",
+    "main.f8fabeb9.js.map": "/rian-edwards-portfolio/static/js/main.f8fabeb9.js.map",
     "453.2580d2ac.chunk.js.map": "/rian-edwards-portfolio/static/js/453.2580d2ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c03f474.css",
-    "static/js/main.4bdb2c09.js"
+    "static/js/main.f8fabeb9.js"
   ]
 }
